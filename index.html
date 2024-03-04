@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editor Gráfico</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Paintzz</h1>
+    </header>
+    <div class="canvas-container">
+      <canvas id="paintCanvas"></canvas>
+    </div>
+    <div class="tools">
+      <div class="color-picker-container">
+        <label for="colorPicker">Cor do Pincel:</label>
+        <input type="color" id="colorPicker" value="#000000" />
+      </div>
+      <div class="brush-size-container">
+        <label for="brushSize">Tamanho do Pincel:</label>
+        <input type="range" id="brushSize" min="1" max="20" value="5" />
+      </div>
+      <button id="eraserButton">Borracha</button>
+      <button id="fillButton">Preencher</button>
+      <button id="increaseSizeButton">Aumentar Quadro</button>
+      <button id="clearButton">Limpar</button>
+      <div class="resize">
+        <input type="number" id="newWidthInput" placeholder="Nova Largura" />
+        <input type="number" id="newHeightInput" placeholder="Nova Altura" />
+        <button id="resizeButton">Redimensionar</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
